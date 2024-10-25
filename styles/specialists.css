@@ -1,0 +1,157 @@
+.title-area{
+    background-color: #FFF8F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: #1F2937;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; 
+        margin: 80px 40px;
+    }
+}
+.specialists {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 40px;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.above-info{
+    display: flex;
+    gap: 20px;
+}
+
+.left-info{
+    width: 60%;
+}
+
+.header{
+    display: flex;
+    gap: 20px;
+
+    span{
+        font-weight: 900;
+    }
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.crp {
+    margin: 5px 0;
+    color: #666;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+}
+
+.tab.active {
+    border-bottom: 2px solid #ff4081;
+    color: #ff4081;
+}
+
+.content {
+    color: #4B4B4B;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    text-align: left;
+}
+
+.ctas{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.right-info{
+    .date{
+        display: flex;
+        padding-bottom: 10px;
+        h2{
+            color: #4B4B4B;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px; /* 120% */
+
+            span{
+                font-weight: 900;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.schedule-time{
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #C1C1C1;
+    padding: 10px 20px;
+    color: #4B4B4B;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px; /* 146.667% */
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}
