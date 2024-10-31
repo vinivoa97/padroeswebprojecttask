@@ -21,17 +21,22 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="/index.html"><img src="/assets/glow-logo.svg" alt="logo Glow!" /></a>
-                </li>
+            <a href="/index.html" class="logo">
+                <img src="/assets/glow-logo.svg" alt="logo Glow!" />
+            </a>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
                 <li><a href="/specialists.html">Agende uma sessão</a></li>
                 <li><a href="/">Para especialistas</a></li>
+                <div class="ctas">
+                    <a href="/login.html">Entrar</a>
+                    <a href="/" class="btn-primary">Criar conta</a>
+                </div>
             </ul>
-            <div class="ctas">
-                <a href="/login.html">Entrar</a>
-                <a href="/" class="btn-primary">Criar conta</a>
-            </div>
         </nav>
     </header>
     <main>
@@ -191,7 +196,8 @@
             <h3>Imprensa</h3>
             <h5>Contato</h5>
         </section>
-    </footer>
+    </footer>    
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

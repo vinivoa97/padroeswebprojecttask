@@ -1,9 +1,10 @@
-.title-area{
+.title-area {
     background-color: #FFF8F1;
     display: flex;
     justify-content: center;
     align-items: center;
-    h1{
+    text-align: center;
+    h1 {
         color: #1F2937;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
@@ -14,6 +15,7 @@
         margin: 80px 40px;
     }
 }
+
 .specialists {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
@@ -37,20 +39,19 @@
     flex-direction: column;
 }
 
-.above-info{
+.above-info {
     display: flex;
     gap: 20px;
 }
 
-.left-info{
+.left-info {
     width: 60%;
 }
 
-.header{
+.header {
     display: flex;
     gap: 20px;
-
-    span{
+    span {
         font-weight: 900;
     }
 }
@@ -106,52 +107,135 @@ h2 {
 .content {
     color: #4B4B4B;
     font-size: 15px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 22px; 
+    line-height: 22px;
     text-align: left;
 }
 
-.ctas{
+.profile-card .ctas {
     display: flex;
     justify-content: center;
     padding-top: 40px;
 }
 
-.right-info{
-    .date{
-        display: flex;
-        padding-bottom: 10px;
-        h2{
-            color: #4B4B4B;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 18px; /* 120% */
-
-            span{
-                font-weight: 900;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+.right-info .date {
+    display: flex;
+    padding-bottom: 10px;
 }
 
-.schedule-time{
+.hidden {
+    display: none;
+}
+
+.date h2 {
+    color: #4B4B4B;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.date h2 span {
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+
+.date-popup {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 30px; /* Ajusta a posição logo abaixo do span */
+    left: 0;
+    z-index: 10;
+}
+
+#date-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.schedule-time {
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid #C1C1C1;
     padding: 10px 20px;
     color: #4B4B4B;
     font-size: 15px;
-    font-style: normal;
     font-weight: bold;
-    line-height: 22px; /* 146.667% */
+    line-height: 22px;
+    cursor: pointer;
+}
 
-    &:hover{
-        cursor: pointer;
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
     }
 
+    .above-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-info, .right-info {
+        width: 100%;
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .schedule-time {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .date h2 {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .title-area h1 {
+        font-size: 24px;
+        margin: 40px 20px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-area h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+    }
+
+    .content {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
